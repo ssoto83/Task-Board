@@ -9,11 +9,15 @@ console.log(nextId);
 
 // Todo: create a function to generate a unique task id
 function generateTaskId() {
-
+let id = nextId++;
+localStorage.setItem("nextId", JSON.stringify(nextId));
+return id;
 }
 
 // Todo: create a function to create a task card
 function createTaskCard(task) {
+    let card = 
+    return card;
 
 }
 
