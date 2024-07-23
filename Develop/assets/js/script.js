@@ -1,6 +1,7 @@
 // Retrieve tasks and nextId from localStorage
 let taskList = JSON.parse(localStorage.getItem("tasks"));
 let nextId = JSON.parse(localStorage.getItem("nextId"));
+let dateInputEl = $('#datePicker');
 
 
 // Now you can use taskList and nextId in your code
@@ -16,7 +17,15 @@ return id;
 
 // Todo: create a function to create a task card
 function createTaskCard(task) {
-    let card = 
+    let card = $('<div>').addClass('task-card');
+
+    card.attr('data-task-id', task.id);
+
+    let title = $('<h3>').text(task.title);
+    let deadline = $('<p>').text('deadline:' + task.deadline);
+    let description = $('<p>').text(task.description);
+
+    card.append(title, deadline, description);
     return card;
 
 }
@@ -24,10 +33,40 @@ function createTaskCard(task) {
 // Todo: create a function to render the task list and make cards draggable
 function renderTaskList() {
 
-}
+    taskList.forEach(task => {
+        let card = createTaskCard(task);
+            card.draggable();
+            if (task.status === 'todo') {
+                $('#todo-cards').append(card);
+            } else if (task.status === 'inProgress') {
+                $('#in-progress-cards').append(card);
+            } else if (task.status === 'done') {
+                $('#done-cards').append(card);
+            }
+            });
+            }
+         
+//     $( function() {
+//         $( "#draggable" ).draggable();
+//         card.draggable();
+//       } );
+// }
 
 // Todo: create a function to handle adding a new task
 function handleAddTask(event){
+    event.preventDefault();
+
+    let task = $("#task").val();
+    let dateInputEl = $("#datePicker").val();
+    let taskDescription = $("#taskDescription").val();
+   
+    let addTask = {
+        id: generateTaskId(),
+        task: task,
+        description: taskDescription,
+        dueDate: dueDate,
+        progress: "todo"
+    };
 
 }
 
