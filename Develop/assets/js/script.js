@@ -57,14 +57,14 @@ function handleAddTask(event){
     event.preventDefault();
 
     let task = $("#task").val();
-    let dateInputEl = $("#datePicker").val();
+    let dueDate = $("#datePicker").val();
     let taskDescription = $("#taskDescription").val();
    
     let addTask = {
         id: generateTaskId(),
         task: task,
         description: taskDescription,
-        dueDate: dueDate,
+        deadline: dueDate,
         progress: "todo"
     };
 
@@ -72,11 +72,23 @@ function handleAddTask(event){
 
 // Todo: create a function to handle deleting a task
 function handleDeleteTask(event){
+    let taskId = $(event.target).closest('.task-card').data('task-id');
+    taskList = taskList.filter(task => task.id !== taskId);
 
+    localStorage.setItem('task', json.stringify(taskList));
+
+    $(event.target).closest('.task-card').remove();
 }
 
 // Todo: create a function to handle dropping a task into a new status lane
 function handleDrop(event, ui) {
+        let taskId = ui.draggable.data('task-id');
+        let newStatus = $(event.target).closest('.lane').attr('id');
+
+        let taskToUpdate = taskList.find(task => task.id === taskId);
+        if (taskToUpdate) {
+            taskToUpdate.status = newStatus;
+        }
 
 }
 

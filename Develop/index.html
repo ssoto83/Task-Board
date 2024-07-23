@@ -22,7 +22,9 @@
   </header>
   <div class="container">
     <div class="text-center mb-5">
-      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#formModal">Add Task</button>
+      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#formModal">
+        Add Task
+      </button>
     </div>
     <!-- Todo: Create a modal with a form to add tasks -->
     <div class="modal fade" tabindex="-1" id="formModal">
@@ -35,30 +37,32 @@
             <div class="row">
               <div class="col">
                 <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="taskTitle" placeholder="">
                   <label for="taskTitle" class="form-label">Task</label>
+                  <input type="text" class="form-control" id="taskTitle" placeholder="" />
                 </div>
               </div>
               <div class="col">
-                <div class="form-floating mb-3"> 
-                  <label for="formGroupExampleInput2" class="form-label">Task Due Date</label>
-                  <input type="text" class="form-control" id="datePicker" placeholder="">
-                  
+                <div class="form-floating mb-3">
+                  <label for="datePicker" class="form-label">Task Due Date</label>
+                </div>
+                <input type="date" class="form-control" id="datePicker" placeholder=""/>
                 </div>
               </div>
-              <div class="form-floating">
+              <div class="form-floating mb-3">
+                <label for="taskDescription">Task description</label>
                 <textarea class="form-control" placeholder="" id="taskDescription" style="height: 100px"></textarea>
-                <label for="floatingTextarea2">Task description</label>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Add Task</button>
+                <button type="button" class="btn btn-primary">
+                  Add Task
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  
+
     <div class="row swim-lanes text-center justify-content-between">
       <div class="col-12 col-lg-4 d-flex">
         <div id="to-do" class="card border-light mb-3 lane flex-grow-1">
@@ -79,16 +83,16 @@
             <div id="in-progress-cards"></div>
           </div>
         </div>
+      </div>
+      <div class="col-12 col-lg-4 d-flex">
+        <div id="done" class="card border-light mb-3 lane flex-grow-1">
+          <div class="card-header bg-white">
+            <h2 class="card-title mb-1">Done</h2>
+          </div>
+          <div class="card-body bg-light">
+            <div id="done-cards"></div>
+          </div>
         </div>
-        <div class="col-12 col-lg-4 d-flex">
-          <div id="done" class="card border-light mb-3 lane flex-grow-1">
-            <div class="card-header bg-white">
-              <h2 class="card-title mb-1">Done</h2>
-            </div>
-            <div class="card-body bg-light">
-              <div id="done-cards"></div>
-          </div>
-          </div>
       </div>
     </div>
   </div>
