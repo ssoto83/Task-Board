@@ -22,41 +22,34 @@
   </header>
   <div class="container">
     <div class="text-center mb-5">
-      <button type="button" class="btn btn-success" id= "addTaskButton" data-bs-toggle="modal" data-bs-target="#formModal">
-        Add Task
-      </button>
+      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#formModal">Add Task</button>
     </div>
-    <!-- Todo: Create a modal with a form to add tasks -->
-    <div class= "modal" tabindex="-1" id="formModal">
+
+    <!-- Modal for adding tasks -->
+    <div class="modal fade" tabindex="-1" id="formModal">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h4 class="modal-title">Add Task</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <div class="row">
-              <div class="col">
-                <div class="mb-3">
-                  <label for="taskTitle" class="form-label">Task</label>
-                  <input type="text" class="form-control" id="taskTitle" placeholder="" />
-                </div>
-              </div>
-              <div class="col">
-                <div class="mb-3">
-                  <label for="datePicker" class="form-label">Task Due Date</label>
-                  <input type="date" class="form-control" id="datePicker" placeholder=""/>
-                </div>
-              </div>
-              <div class="mb-3">
-                <label for="taskDescription">Task description</label>
-                <textarea class="form-control" placeholder="" id="taskDescription" style="height: 100px"></textarea>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
-                  Add Task
-                </button>
-              </div>
+            <div class="mb-3">
+              <label for="taskTitle" class="form-label">Task Title</label>
+              <input type="text" class="form-control" id="taskTitle" placeholder="Task title" />
             </div>
+            <div class="mb-3">
+              <label for="datePicker" class="form-label">Task Due Date</label>
+              <input type="date" class="form-control" id="datePicker" placeholder="" />
+            </div>
+            <div class="mb-3">
+              <label for="taskDescription" class="form-label">Task Description</label>
+              <textarea class="form-control" id="taskDescription" style="height: 100px" placeholder="Task description"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="saveTaskButton">Add Task</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -95,6 +88,7 @@
       </div>
     </div>
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
