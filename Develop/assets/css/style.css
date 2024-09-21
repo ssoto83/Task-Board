@@ -15,7 +15,7 @@ body {
   cursor: grab;
 }
 
-.form-floating {
+/* .form-floating {
   position: relative;
   margin-bottom: 1rem;
 }
@@ -36,4 +36,4 @@ body {
 .form-floating input:not(:placeholder-shown) + label {
   font-size: 0.75rem;
   transform: translateY(-1.5rem);
-}
+} */
