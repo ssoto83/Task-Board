@@ -138,4 +138,3 @@ $(document).ready(function () {
     $('.lane').on('dragover', handleDragOver);
     $('.lane').on('drop', handleDrop);
 });
-
