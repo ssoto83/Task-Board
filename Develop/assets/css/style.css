@@ -15,25 +15,11 @@ body {
   cursor: grab;
 }
 
-/* .form-floating {
+/* .card {
   position: relative;
-  margin-bottom: 1rem;
 }
 
-.form-floating label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  color: black;
-}
-
-.form-floating input {
-  padding-top: 1.5rem;
-}
-
-.form-floating input:focus + label,
-.form-floating input:not(:placeholder-shown) + label {
-  font-size: 0.75rem;
-  transform: translateY(-1.5rem);
+.lane {
+  position: relative;
+  z-index: 1;
 } */
