@@ -1,11 +1,8 @@
-# Task Board Starter Code
-# 05 Third-Party APIs: Task Board
+# Task Board
 
-## Your Task
+## Description  
 
-Create a simple task board application that allows a team to manage project tasks by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
-
-You'll need to use the [Day.js](https://day.js.org/en/) library to work with dates. Be sure to read the documentation carefully and concentrate on using Day.js in the browser.
+Create a simple task board application that allows the user to manage project tasks. This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery. Also, [Day.js](https://day.js.org/en/) library to work with dates.  
 
 ## User Story
 
@@ -35,67 +32,12 @@ WHEN I refresh the page
 THEN the saved tasks persist
 ```
 
-The following animation demonstrates the application functionality:
+## Application sample
 
-![A user adds three tasks to the task board and changes the state of two of them to in progress and then completion. The user then deletes the two cards in the done column.](./Assets/05-third-party-apis-homework-demo.gif)
+![A sample screenshot from the application showing the Add task button, todo, in progress and done fields.](./Develop/assets/ApplicationImage.png)
 
-## Grading Requirements
+## Repository link   
+https://github.com/ssoto83/Task-Board.git  
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+## Deployed application URL  
 
-This Challenge is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-  * Uses the Day.js library to work with dates
-
-### Deployment: 32%
-
-* Application deployed at live URL
-
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the Challenge instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
