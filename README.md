@@ -36,8 +36,11 @@ THEN the saved tasks persist
 
 ![A sample screenshot from the application showing the Add task button, todo, in progress and done fields.](./Develop/assets/ApplicationImage.png)
 
-## Repository link   
+## Repository link     
+
 https://github.com/ssoto83/Task-Board.git  
 
-## Deployed application URL  
+## Deployed application URL    
+
+https://ssoto83.github.io/Task-Board/
 
